@@ -16,16 +16,6 @@ public class PasswordManagerApp {
 				return null;
 			}
 		}
-
-		public static String decrypt(String encrypted) {
-			try {
-				byte[] decodedBytes = Base64.getDecoder().decode(encrypted);
-				return new String(decodedBytes, StandardCharsets.UTF_8);
-			} catch (Exception e) {
-				System.err.println("Ошибка при дешифровании Base64: " + e.getMessage());
-				return null;
-			}
-		}
 	}
 
 	// шифрование MD5
