@@ -183,7 +183,7 @@ public class PasswordManagerApp {
 					if (userManager.validateUser(login, enteredPassword)) {
 						System.out.println("Вход успешен!");
 					} else {
-						System.out.println("Неверный логин или пароль.");
+						System.out.println("Неверный пароль.");
 					}
 					break;
 
